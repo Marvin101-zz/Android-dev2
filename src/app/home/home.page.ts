@@ -3,16 +3,16 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-folder',
-  templateUrl: './folder.page.html',
-  styleUrls: ['./folder.page.scss'],
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
 })
-export class FolderPage implements OnInit {
-  public folder: string;
+export class HomePage implements OnInit {
+  public home: string;
 
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.folder = this.activatedRoute.snapshot.paramMap.get('id');
+    this.home = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
 }
