@@ -1,21 +1,71 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="false">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Faven</ion-title>
+    <ion-title></ion-title>
+    <ion-searchbar placeholder="Search for restaurants or cuisines" inputmode="decimal" type="decimal" (ionChange)="onSearchChange($event)" [debounce]="250" showCancelButton="250"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" style="padding-bottom: 60px;">
+    <ion-fab-button color="secondary">
+      <ion-icon name="person"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="secondary">
+      <ion-icon name="cart"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Faven</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong class="capitalize">Faven</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card href="fourth" target="_parent">
+    <ion-card-header color="primary">
+      <ion-card-subtitle>Cuisine</ion-card-subtitle>
+      <ion-card-title>Zomato Serivice</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="color: brown;">
+      <ion-img src="assets/images/background.jpg" style="padding-top: 5px;"></ion-img>
+      Select a cuisine of your choice
+    </ion-card-content>
+</ion-card>
+
+<ion-card href="third" target="_parent">
+  <ion-card-header color="primary">
+    <ion-card-subtitle>Cuisine</ion-card-subtitle>
+    <ion-card-title>Zomato Serivice</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-img src="assets/images/background.jpg" style="padding-top: 5px;"></ion-img>
+    Select a cuisine of your choice
+  </ion-card-content>
+</ion-card>
+
+<ion-card href="first" target="_parent">
+  <ion-card-header  color="primary">
+    <ion-card-subtitle>Cuisine</ion-card-subtitle>
+    <ion-card-title>Zomato Serivice</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-img src="assets/images/background.jpg" style="padding-top: 5px;"></ion-img>
+    Select a cuisine of your choice
+  </ion-card-content>
+</ion-card>
+
+<ion-card href="second" target="_parent">
+  <ion-card-header color="primary">
+    <ion-card-subtitle>Cuisine</ion-card-subtitle>
+    <ion-card-title>Zomato Serivice</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-img src="assets/images/background.jpg" style="padding-top: 5px;"></ion-img>
+    Select a cuisine of your choice
+  </ion-card-content>
+</ion-card>
 </ion-content>

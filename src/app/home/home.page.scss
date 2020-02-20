@@ -3,7 +3,7 @@ ion-menu-button {
 }
 
 #container {
-  text-align: center;
+  text-align: left;
   position: absolute;
   left: 0;
   right: 0;
@@ -29,4 +29,49 @@ ion-menu-button {
 
 ion-content ion-toolbar {
   --background: transparent;
+}
+ion-icon {
+  color: #ad24cf;
+  font-size: 24px;
+}
+
+ion-fab-button {
+  --background: #c01687;
+  --background-activated: #3880ff;
+  --background-activated-opacity: 1;
+  --background-focused: #3880ff;
+  --background-focused-opacity: 1;
+  --background-hover: #49ff38;
+  --background-hover-opacity: 1;
+  --border-color: #0faa6a;
+  --border-radius: 40%;
+  --border-style: solid;
+  --border-width: 8px;
+  --box-shadow: 10px 10px;
+  --color: #ffffff;
+  --color-activated: #3880ff;
+  --color-focused: #3880ff;
+  --color-hover: #3880ff;
+  --padding-bottom: 4px;
+  --padding-end: 4px;
+  --padding-start: 4px;
+  --padding-top: 4px;
+  --ripple-color: #1e1e1e;
+  --transition: background-color 15ms linear;
+}
+ion-card {
+  --background: #1aacd1;
+  --color: #3880ff;
+}
+
+ion-searchbar {
+  --background: #0be6c8;
+  --cancel-button-color: #3880ff;
+  --clear-button-color: #3880ff;
+  --color: #2316db;
+  --icon-color: #3880ff;
+  --placeholder-color: #ec1919;
+  --placeholder-font-style: initial;
+  --placeholder-font-weight: 900;
+  --placeholder-opacity: 0.5;
 }

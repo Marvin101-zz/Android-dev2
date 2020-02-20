@@ -1,28 +1,17 @@
 <ion-app>
-  <ion-split-pane contentId="main-content">
+  <ion-split-pane contentId="main-content" when="md">
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="category-list">
-          <ion-list-header><a href="\home">Home</a></ion-list-header>
-          <ion-note>smithp626@gmail.com</ion-note>
+          <ion-list-header style="padding-left: 95px;"><a href="\home">Faven</a></ion-list-header>
+          <ion-note style="padding-left: 50px;">Your ultimate food haven</ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item href="{{ p.url }}">
-              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-icon color="primary" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>
-        </ion-list>
-
-        <ion-list id="labels-list">
-          <ion-list-header>Labels</ion-list-header>
-
-          <ion-item *ngFor="let label of labels" lines="none">
-            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label >{{ label }}</ion-label>
-            
-            
-          </ion-item>
         </ion-list>
       </ion-content>
     </ion-menu>

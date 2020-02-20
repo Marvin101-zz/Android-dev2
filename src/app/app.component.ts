@@ -23,27 +23,16 @@ export class AppComponent implements OnInit {
       icon: 'paper-plane'
     },
     {
-      title: 'Favorites',
-      url: '/home/Favorites',
+      title: 'Track your order',
+      url: '/track',
       icon: 'heart'
     },
     {
-      title: 'Archived',
-      url: '/home/Archived',
-      icon: 'archive'
-    },
-    {
-      title: 'Trash',
-      url: '/home/Trash',
-      icon: 'trash'
-    },
-    {
-      title: 'Spam',
-      url: '/home/Spam',
-      icon: 'warning'
+      title: 'About Us',
+      url: '/about',
+      icon: 'people'
     }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor(
     private platform: Platform,
