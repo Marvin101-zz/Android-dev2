@@ -9,10 +9,10 @@ import { ActivatedRoute } from '@angular/router';
 export class HomePage implements OnInit {
   public home: string;
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute) {
+  }
 
   ngOnInit() {
     this.home = this.activatedRoute.snapshot.paramMap.get('id');
   }
-
 }
