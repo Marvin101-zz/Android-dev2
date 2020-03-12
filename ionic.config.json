@@ -1,5 +1,7 @@
 {
   "name": "faven",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

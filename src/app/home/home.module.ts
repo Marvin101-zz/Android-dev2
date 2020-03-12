@@ -1,3 +1,4 @@
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,6 +14,7 @@ import { HomePage } from './home.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    SplashScreen,
     HomePageRoutingModule
   ],
   declarations: [HomePage]
